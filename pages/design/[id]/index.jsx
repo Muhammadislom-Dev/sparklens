@@ -54,11 +54,16 @@ export default function Design() {
         <title>{posts?.attributes?.Title}</title>
         <link sizes="any" rel="icon" href="/logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content={posts?.attributes?.Title} />
+        <meta
+          type="image"
+          name="link"
+          href={`${FILE_URL}${posts?.attributes?.Images?.data[0]?.attributes?.url}`}
+        />
         <meta
           property="og:image"
           content={`${FILE_URL}${posts?.attributes?.Images?.data[0]?.attributes?.url}`}
         />
-        <meta property="og:title" content={posts?.attributes?.Title} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
