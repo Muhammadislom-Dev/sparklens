@@ -60,7 +60,7 @@ export default function Design() {
           property="og:image"
           content={`${FILE_URL}${posts?.attributes?.Images?.data[0]?.attributes?.url}`}
         />
-        <meta property="og:url" content="https://sparklens.xyz/" />
+        <meta property="og:url" content="https://dashing-chaja-ec5648.netlify.app" />
 
         {/* <meta
           name="keywords"
