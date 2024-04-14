@@ -8,32 +8,6 @@ import Footer from "@/components/Footer";
 import { useMyContext } from "@/context/DarkModeContext";
 import { useMyContextSearch } from "@/context/SearchInputContext";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  openGraph: {
-    title: "Next.js",
-    description: "The React Framework for the Web",
-    url: "https://nextjs.org",
-    siteName: "Next.js",
-    images: [
-      {
-        url: "https://nextjs.org/og.png", // Must be an absolute URL
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://nextjs.org/og-alt.png", // Must be an absolute URL
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-};
-
 export default function Home() {
   const contextValue = useMyContext();
   const contextSearch = useMyContextSearch();
@@ -41,6 +15,10 @@ export default function Home() {
     <>
       <Head>
         <title>Sparklens</title>
+        <meta
+          name="keywords"
+          content="inspiration, ui, ux, dropdown, navigation, megamenu, modal, button, navbar, tab, design inspiration, creative community, designer portfolio, design showcase, UI/UX design, graphic design, animation, illustration, design trends, freelance design jobs"
+        />
       </Head>
       <main className={contextValue?.darkMode === false ? "light" : "dark"}>
         <Navbar />
