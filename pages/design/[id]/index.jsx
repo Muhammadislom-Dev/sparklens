@@ -54,7 +54,22 @@ export default function Design() {
         <title>{posts?.attributes?.Title}</title>
         <link sizes="any" rel="icon" href="/logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content={posts?.attributes?.Title} />
+        <meta name="description" content={posts?.attributes?.Title} />
+        <meta
+          name="keywords"
+          content="inspiration, ui, ux, dropdown, navigation, megamenu, modal, button, navbar, tab, design inspiration, creative community, designer portfolio, design showcase, UI/UX design, graphic design, animation, illustration, design trends, freelance design jobs"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:image"
+          content={`${FILE_URL}${posts?.attributes?.Images?.data[0]?.attributes?.url}`}
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:image"
+          content={`${FILE_URL}${posts?.attributes?.Images?.data[0]?.attributes?.url}`}
+        />
+        {/* <meta property="og:title" content={posts?.attributes?.Title} />
         <meta
           type="image"
           name="link"
@@ -66,7 +81,7 @@ export default function Design() {
         />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:height" content="630" /> */}
       </Head>
       <main className={contextValue?.darkMode === false ? "light" : "dark"}>
         <Navbar />
