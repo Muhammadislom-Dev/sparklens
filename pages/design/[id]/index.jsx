@@ -60,22 +60,11 @@ export default function Design() {
           property="og:image"
           content={`${FILE_URL}${posts?.attributes?.Images?.data[0]?.attributes?.url}`}
         />
-        <meta property="og:url" content="https://dashing-chaja-ec5648.netlify.app" />
-
-        {/* <meta
+        <meta property="og:url" content="https://sparklens.xyz/" />
+        <meta
           name="keywords"
           content="inspiration, ui, ux, dropdown, navigation, megamenu, modal, button, navbar, tab, design inspiration, creative community, designer portfolio, design showcase, UI/UX design, graphic design, animation, illustration, design trends, freelance design jobs"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          property="og:image"
-          content={`${FILE_URL}${posts?.attributes?.Images?.data[0]?.attributes?.url}`}
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          name="twitter:image"
-          content={`${FILE_URL}${posts?.attributes?.Images?.data[0]?.attributes?.url}`}
-        /> */}
       </Head>
       <main className={contextValue?.darkMode === false ? "light" : "dark"}>
         <Navbar />
